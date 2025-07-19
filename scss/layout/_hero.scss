@@ -1,0 +1,74 @@
+.hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 113px;
+    padding-bottom: 117px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(/F&B/image/1_1.jpg);
+    .hero_container{
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        .hero__content{
+            max-width: 688px;
+            .hero_link{
+                font-weight: 700;
+                font-size: $font-size-ss;
+                align-items: center;
+                line-height: 100%;
+                color: $clr-primary-green;
+                }
+            }
+            .hero_descr{
+                margin: 0 0 24px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #fff;
+            }
+            .hero_title{
+                margin: 0 0 22px;
+                font-family: $family-title,sans-serif;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 100%;
+                color: #fff;
+            }
+        }
+    }
+@media (max-width: 576px) and (min-width:0px) {
+    .hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 73px;
+    padding-bottom: 57px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(/F&B/image/1_1.jpg);
+    .hero_container{
+        display: flex;
+        align-items: center;
+        .hero__content{
+            max-width: 688px;
+            padding: 0px 12px;
+            .hero_link{
+                font-weight: 700;
+                font-size: $font-size-ss;
+                align-items: center;
+                line-height: 100%;
+                color: $clr-primary-green;
+                }
+            }
+            .hero_descr{
+                display: none;
+            }
+            .hero_title{
+                margin: 0 0 22px;
+                font-family: $family-title,sans-serif;
+                font-weight: 700;
+                font-size: $font-size-x;
+                line-height: 100%;
+                color: #fff;
+            }
+        }
+    }
+}

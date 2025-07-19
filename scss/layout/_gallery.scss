@@ -1,0 +1,137 @@
+ .swiper-pagination-numbers {
+    text-align: center;
+    margin-top: 10px;
+    font-size: $font-size-ss;
+    color: $clr-primary-white;
+    font-family: $family-title;
+    font-weight: 700;
+  }
+
+  .swiper-penis{
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .swiper-button-next{
+       position: unset;
+        display: block;
+        margin-top: unset;
+        width: 25px;
+        height: 20px;
+        border: none;
+        padding: 0;
+        color: $clr-primary-grey;
+    }
+    .swiper-button-prev{
+        position: unset;
+        display: block;
+        margin-top: unset;
+        width: 25px;
+        height: 20px;
+        border: none;
+        padding: 0;
+        color: $clr-primary-grey;
+    }
+  }
+  
+  .swiper-pagination-current {
+    font-weight: bold;
+  }
+
+.gallery {
+  background-color: $clr-background;
+  min-height: 600px; // или height: 100vh;
+
+  .gallery_container {
+    padding: 60px 0 57px;
+
+    .swiper-slide {
+       display: flex;
+      flex-direction: row;
+      transition: 1.25s cubic-bezier(.2,.6,0,1) !important;
+      max-width: 255px;
+      min-width: 200px; // опционально
+      margin-right: 75px; // проверьте, не ломает ли это Swiper
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $clr-background-shade;
+        background-color: $clr-background;
+        min-height: 493px; // или height: auto;
+
+        .card_content {
+          padding: 16px 16px 24px;
+          height: 313px;
+          display: flex;
+          flex-grow: 1;
+          flex-direction: column;
+          align-items: flex-start;
+          overflow-y: auto; // если контент слишком длинный
+
+          .card__btn {
+            margin-top: auto;
+            display: block;
+            border: 1px solid $clr-primary-green;
+            padding: 10px 28px;
+            font-weight: 400;
+            font-size: $font-size-ss;
+            line-height: 150%;
+            color: $clr-primary-green;
+            cursor: pointer;
+            transition: border-color 0.3s, color 0.3s, background-color 0.3s;
+
+            &:hover {
+              border-color: $clr-primary-green;
+              color: #0b1919;
+              background-color: $clr-primary-green;
+            }
+          }
+
+          .card__descr {
+            font-family: $family-primary;
+            font-weight: 400;
+            font-size: $font-size-ss;
+            color: $clr-primary-grey;
+          }
+
+          .card__title {
+            font-family: $family-title;
+            font-weight: 700;
+            font-size: $font-size-l;
+            line-height: 150%;
+            color: $clr-primary-white;
+            margin-bottom: 8px;
+          }
+        }
+
+        .card__image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          height: 180px;
+          background-color: $clr-background-shade;
+          padding: 30px 15px;
+
+          .card__image-number {
+            position: absolute;
+            left: 19px;
+            top: 16px;
+            border: 1px solid $clr-primary-grey;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            font-family: $family-title, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $clr-primary-grey;
+          }
+        }
+      }
+    }
+  }
+}

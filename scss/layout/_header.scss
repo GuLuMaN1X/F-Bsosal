@@ -1,0 +1,145 @@
+.header {
+    position: relative;
+    background-color: #1D2F30;
+    padding: 16px 16px;
+    .header_container{
+        @include flex-row-center;
+        .header_logo{
+            margin-right: 125px;
+        }
+        .btn-login-in{
+            &:hover{
+                fill: $clr-active-green;
+            }
+        }
+        .header_search{
+            margin-right: 64px;
+        }
+        .nav_list{
+            @include flex-row;
+            gap: 64px;
+            margin-right: auto;
+            .nav-item{
+                .nav-link{
+                    font-weight: 400;
+                    font-size: $font-size-ss;
+                    line-height: 150%;
+                    color: $clr-primary-white;
+                    transition: $transition-fast;
+                    &:focus {
+                        color: $clr-active-green;
+                        outline: 2px solid $clr-primary-green;
+                        outline-offset: 4px; // Отступ обводки от элемента
+                      }
+                    &:hover{
+                        color: $clr-primary-green;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px) and (min-width:576px) {
+    .header {
+        position: relative;
+        background-color: #1D2F30;
+           padding: 16px 16px;
+        .header_container{
+            @include flex-row-center;
+            .header_logo{
+                margin-right: auto;
+            }
+            .btn-login-in{
+                &:hover{
+                    fill: $clr-active-green;
+                }
+            }
+            .header_search{
+                margin-right: 64px;
+                
+            }
+            .nav_list{
+                display: flex;
+                align-items: center;
+                position: absolute;
+                justify-content: center;
+                bottom: -40px;
+                left: 0;
+                gap: 64px;
+                margin-right: auto;
+                width: 100%;
+                .nav-item{
+                    .nav-link{
+                        font-weight: 400;
+                        font-size: $font-size-ss;
+                        line-height: 150%;
+                        color: $clr-primary-white;
+                        transition: $transition-fast;
+                        &:focus {
+                            color: $clr-active-green;
+                            outline: 2px solid $clr-primary-green;
+                            outline-offset: 4px; // Отступ обводки от элемента
+                          }
+                        &:hover{
+                            color: $clr-primary-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) and (min-width:0px) {
+    .header {
+        position: relative;
+        background-color: #1D2F30;
+        padding: 16px 16px;
+        .header_container{
+            @include flex-row-center;
+            .header_logo{
+                margin-right: auto;
+            }
+            .btn-login-in{
+                margin-right: 28px;
+                &:hover{
+                    fill: $clr-active-green;
+                }
+            }
+            .header_search{
+                margin-right: 64px;
+            }
+            .nav_list{
+                display: flex;
+                align-items: center;
+                position: absolute;
+                justify-content: start;
+                bottom: -40px;
+                left: 0;
+                gap: 64px;
+                margin-right: auto;
+                overflow: auto;
+                padding-left: 32px;
+                padding-right: 32px;
+                width: 100%;
+                .nav-item{
+                     white-space: nowrap; /* Запрещает перенос */
+                    .nav-link{
+                        font-weight: 400;
+                        font-size: $font-size-ss;
+                        line-height: 150%;
+                        color: $clr-primary-white;
+                        transition: $transition-fast;
+                        &:focus {
+                            color: $clr-active-green;
+                            outline: 2px solid $clr-primary-green;
+                            outline-offset: 4px; // Отступ обводки от элемента
+                          }
+                        &:hover{
+                            color: $clr-primary-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

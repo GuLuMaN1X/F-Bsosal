@@ -1,0 +1,67 @@
+.footer{
+    .footer_bottom{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: $clr-background;
+        .copyright{
+            margin: 0;
+            font-weight: 400;
+            font-size: $font-size-s;
+            color: $clr-primary-grey;
+        }
+    }
+    .footer_top{
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 32px;
+        background-color: $clr-background-shade;
+        .footer_container{
+            display: -webkit-box;
+            display: -ms-flexbox;
+                                 display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+                                 align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                                 justify-content: center;
+            .footer-social{
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                         display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                         align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                        justify-content: center;
+                        .social-link{
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            width: 24px;
+                            height: 24px;
+                        }
+                .social-item:not(:last-child){
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}

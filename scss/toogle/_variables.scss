@@ -1,0 +1,86 @@
+
+$clr-primary-black: #000000;
+$clr-primary-white: #FFFFFF;
+$clr-background-shade:#0B1919;
+$clr-primary-grey:#899D9D;
+$clr-background:#1D2F30;
+$clr-primary-green:#BAE249;
+$clr-active-green:#688B05;
+$clr-primary-red:#E24949;
+
+$font-size-s: 1.2rem;
+$font-size-ss: 1.6rem;
+$font-size-l: 2.4rem;
+$font-size-x: 4.8rem;
+$font-size-xl: 6.0rem;
+
+$margin-xxsmall: 1rem;
+$margin-xsmall: 2rem;
+$margin-small: 3rem;
+$margin-regular: 4rem;
+$margin-medium: 5rem;
+$margin-xmedium: 6rem;
+$margin-xxmedium: 7rem;
+$margin-large: 10rem;
+
+$padding-xxsmall: 1rem;
+$padding-xsmall: 2rem;
+$padding-small: 3rem;
+$padding-regular: 4rem;
+$padding-medium: 5rem;
+$padding-xmedium: 6rem;
+$padding-xxmedium: 7rem;
+$padding-large: 10rem;
+
+$transition-fast: 0.3s ease-in-out;
+$transition-medium: 0.5s ease-in-out;
+$transition-long: 0.8s ease-in-out;
+
+$family-title: "Cormorant", serif;
+$family-primary: "Open Sans", sans-serif;
+
+$container-width: 1280px;
+
+//html
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $family-primary;
+}
+
+//none
+.none {
+    display: none;
+}
+
+.container {
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) and (min-width:768px) {
+    .container {
+        max-width: 952px;
+    }
+}
+@media (max-width: 768px) and (min-width:576px) {
+    .container {
+        max-width: 695px;
+    }
+}
+@media (max-width: 576px) and (min-width:320px) {
+    .container {
+        max-width: 551px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 296px;
+    }
+}
+
+//
